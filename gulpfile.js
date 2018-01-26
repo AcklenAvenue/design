@@ -18,16 +18,15 @@ gulp.task('sass', function() {
     .pipe($.autoprefixer({
       browsers: ['last 2 versions', 'ie >= 9']
     }))
-    .pipe(gulp.dest('css'));
+    .pipe(gulp.dest('docs/css'));
 });
 
 gulp.task('default', ['sass'], function() {
   gulp.watch(['scss/**/*.scss'], ['sass']);
 });
 
-
 gulp.task('pug', function buildHTML() {
   return gulp.src('pug/*.pug')
     .pipe(pug())
-    .pipe(gulp.dest('html'));
+    .pipe(gulp.dest('docs/'));
 });
