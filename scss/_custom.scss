@@ -1,25 +1,9 @@
 // Include theme variables for website or app here
 
-// Theme variables
-// ---------
+// Custom variables
 
-// 1. Color Palette
-
-$foundation-palette: (
-  primary: #72c02c,
-  secondary: #4f4959,
-  success: #3adb76,
-  warning: #ffae00,
-  alert: #d45E5E,
-);
-
-// 2 Font
-
-$body-font-family: 'Montserrat', Helvetica, Roboto, Arial, sans-serif;
 $font-light: 300;
 $font-bold: 800;
-
-@include add-foundation-colors;
 
 
 // Include specitif styles for website or app here
