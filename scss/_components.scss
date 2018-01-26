@@ -121,12 +121,29 @@ label {
 		text-decoration: none;
 		color: $medium-gray;
 	}
+	&.selected {
+	border: 4px solid $primary-color ;
+	border-width: 0 //top
+								0 //right
+								4px //bottom
+								0; //left
+		a {
+			color: $primary-color;
+		}
+	}
 }
 
-.tab--selected {
-	border-bottom: 4px solid $primary-color;
-	a {
-		color: $primary-color;
+.tabs--vertical{
+	@extend .tabs;
+	flex-direction: column;
+	.tab__item.selected {
+		border-width: 0 //top
+									0 //right
+									0 //bottom
+									4px; //left
+		a {
+			color: $primary-color;
+		}
 	}
 }
 

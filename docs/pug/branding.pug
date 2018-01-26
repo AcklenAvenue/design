@@ -13,14 +13,23 @@ html.no-js(lang='en')
 					a.large-3.columns(href="index.html")
 						img.acklen-logo(src="img/acklen-design.svg")
 					ul.tabs.right.large-6.large-offset-3.columns
-						li.tab__item.tab--selected
+						li.tab__item.selected
 							a(href="branding.html") Branding
 						li.tab__item
 							a(href="components.html") Components
 						li.tab__item
 							a(href="resources.html") Resources
 		.row
-			h1 Branding
+			.sidebar.large-4.columns
+				ul.tabs--vertical
+					li.tab__item.selected
+						a(href="branding.html") Logo
+					li.tab__item
+						a(href="components.html") Color Palette
+					li.tab__item
+						a(href="resources.html") Texture
+			.container.columns.large-8
+				h1 Branding
 		script(src='../bower_components/jquery/dist/jquery.js')
 		script(src='../bower_components/what-input/dist/what-input.js')
 		script(src='../bower_components/foundation-sites/dist/js/foundation.js')
