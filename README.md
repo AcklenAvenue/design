@@ -1,12 +1,14 @@
+![Image](https://angelameow.github.io/acklendesign/img/acklen-design.svg)
+
 # AcklenDesign System
 
 AcklenDesign System is a design system based on Foundation Grid and inspired by the Atomic Design framework.
 
 ## Requierements:
-- Node.js
-- NPM
-- SASS
-- Pug (optional)
+- Node.js [link](https://nodejs.org/en/)
+- NPM [link](https://www.npmjs.com/get-npm?utm_source=house&utm_medium=homepage&utm_campaign=free%20orgs&utm_term=Install%20npm)
+- SASS [link](http://sass-lang.com/](SASS)
+- Pug-Gulp [link](https://www.npmjs.com/package/gulp-pug)
 
 ## Instalation
 
@@ -15,11 +17,11 @@ To install the NPM components and Foundation grid first time:
 npm install
 ```
 
-## Compilation
+## Usage
 
 To compile SASS (and PUG) files, run:
 ```bash
-foundation watch
+npm start
 ```
 Source folder for SASS files:
 SCSS/
