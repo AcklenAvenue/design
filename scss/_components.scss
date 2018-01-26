@@ -1,0 +1,148 @@
+// Include styles for Components here
+//
+// Table of contents
+//
+// 1. Buttons
+// 2. Forms
+// 3. Tabs
+// 4. Top Bar
+
+
+// 1. Buttons
+
+.button {
+	display: inline-block;
+	vertical-align: middle;
+	min-width: 150px;
+	margin: .5em .25em;
+	padding: 1em 2em;
+	-webkit-appearance: none;
+	border: 1px solid transparent;
+	border-radius: 6px;
+	transition: background-color 0.25s ease-out, color 0.25s ease-out;
+	font-size: 1em;
+	line-height: 1;
+	text-align: center;
+	cursor: pointer;
+	background-color: $primary-color;
+	color: white;
+	&:hover, &:focus {
+		background-color: rgba($primary-color, .75);
+	}
+	&:focus {
+		box-shadow: 0 0 0 2px $primary-color;
+		outline: none;
+	}
+}
+
+.button--rounded {
+	@extend .button;
+	border-radius: 1.5rem;
+}
+
+.button--outlined {
+	@extend .button;
+	background-color: white;
+	color: $primary-color;
+	border-color: $primary-color;
+	&:hover, &:focus {
+		background-color: $primary-color;
+		color: white;
+	}
+	&:focus {
+		box-shadow: 0 0 0 2px rgba($primary-color,.5);
+	}
+}
+
+
+// 2. Forms
+
+// 2.1 Inputs
+
+[type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'], textarea {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 3rem;
+    margin: 0 0 .25rem;
+    padding: 0.5rem;
+    border: 1px solid #cacaca;
+    border-radius: 4px;
+    background-color: #fefefe;
+    box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #0a0a0a;
+    transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+	&:focus {
+		box-shadow: 0 0 0 2px rgba($primary-color,.5);
+		outline: none;
+	}
+}
+
+// 2.2 Label
+
+label {
+	display: inline-block;
+	font-size: 16px;
+	color: $primary-color;
+	font-weight: 700;
+	margin-bottom: .5rem;
+}
+
+// 2.3 Helptext
+
+.helptext {
+	display: inline-block;
+	margin: .25rem 0;
+	font-size: .75rem;
+	color: #DADADA;
+}
+
+
+// 3. Tabs
+
+.tabs {
+	display: flex;
+	list-style: none;
+	position: relative;
+	padding-left: 0;
+}
+
+.tab__item {
+	display: inline-flex;
+	padding: .25rem .5rem;
+	a {
+		text-decoration: none;
+		color: $light-gray;
+	}
+}
+
+.tab--selected {
+	border-bottom: 4px solid $primary-color;
+	a {
+		color: $primary-color;
+	}
+}
+
+
+// 4. Top Bar
+
+.top-bar {
+	height: auto;
+	line-height: 2.5rem;
+	margin-bottom: 0;
+	position: relative;
+}
+
+.full-width {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: initial;
+}

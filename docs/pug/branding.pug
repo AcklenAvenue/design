@@ -8,11 +8,20 @@ html.no-js(lang='en')
 		link(rel='stylesheet', href='css/app.css')
 	body
 		.row
-			include top-bar.pug
+			nav.top-bar.large-12.columns(role="navigation")
+				.row
+					a.large-3.columns(href="index.html")
+						img.acklen-logo(src="img/acklen-design.svg")
+					ul.tabs.right.large-6.large-offset-3.columns
+						li.tab__item.tab--selected
+							a(href="branding.html") Branding
+						li.tab__item
+							a(href="components.html") Components
+						li.tab__item
+							a(href="resources.html") Resources
 		.row
-			h1 Hello world.
+			h1 Branding
 		script(src='../bower_components/jquery/dist/jquery.js')
 		script(src='../bower_components/what-input/dist/what-input.js')
 		script(src='../bower_components/foundation-sites/dist/js/foundation.js')
 		script(src='../js/app.js')
-
