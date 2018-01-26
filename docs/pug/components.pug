@@ -20,7 +20,34 @@ html.no-js(lang='en')
 						li.tab__item
 							a(href="resources.html") Resources
 		.row
-			h1 Components
+			.sidebar.large-3.columns
+				ul.tabs--vertical
+					li.tab__item.tab__item--parent
+						a(href="") Layout
+						ul.tabs--vertical.tabs--submenu
+							li.tab__item
+								a(href="") Grid
+							li.tab__item
+								a(href="") Containers
+					li.tab__item.tab__item--parent
+						a(href="") Theme
+						ul.tabs--vertical.tabs--submenu
+							li.tab__item
+								a(href="") Color Palette
+							li.tab__item
+								a(href="") Font Family
+					li.tab__item.selected.tab__item--parent
+						a(href="") Components
+						ul.tabs--vertical.tabs--submenu
+							li.tab__item.selected
+								a(href="") Buttons
+							li.tab__item
+								a(href="") Forms
+					li.tab__item.tab__item--parent
+						a(href="") Utilities
+			.container.columns.large-9
+				h1 Components
+				p Components goes here...
 		script(src='../bower_components/jquery/dist/jquery.js')
 		script(src='../bower_components/what-input/dist/what-input.js')
 		script(src='../bower_components/foundation-sites/dist/js/foundation.js')
