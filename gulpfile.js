@@ -22,11 +22,11 @@ gulp.task('sass', function() {
 });
 
 gulp.task('default', ['sass'], function() {
-  gulp.watch(['scss/**/*.scss'], ['sass']);
+  gulp.watch(['scss/**/*.scss', 'docs/**/*.pug'], ['sass','pug']);
 });
 
 gulp.task('pug', function buildHTML() {
-  return gulp.src('pug/*.pug')
+  return gulp.src('docs/pug/*.pug')
     .pipe(pug())
     .pipe(gulp.dest('docs/'));
 });
