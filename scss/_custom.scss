@@ -48,3 +48,16 @@ body {
 	background-position: 90% bottom;
 	background-size: auto 80%;
 }
+
+.branding-assets__item {
+	padding: 40px;
+	img {
+		background-color: $white;
+		border: 1px solid $light-gray;
+		padding: 20px;
+		margin-bottom: 20px;
+	}
+	img.bg-grey {
+		background-color: $light-gray;
+	}
+}

@@ -3,22 +3,40 @@
 // Table of contents
 //
 // 0. Layout
+// 1. Navigations
 // 1. Buttons
 // 2. Forms
 // 3. Tabs
 // 4. Top Bar
 
+*:focus {
+	outline-color: $light-gray;
+}
+
+p {
+	display: block;
+}
 
 // 0. Layout
 
 .container {
 	background: $white;
-	border: 1px solid $light-gray;
+	border: 1px solid $medium-gray;
 	border-radius: .5rem;
 }
 
 .center {
 	text-align: center;
+}
+
+// 1. Navigations
+
+a {
+	color: $primary-color;
+	text-decoration: none;
+	&:hover, &:focus {
+		text-decoration: underline;
+	}
 }
 
 // 1. Buttons
@@ -42,6 +60,7 @@
 	color: white;
 	&:hover, &:focus {
 		background-color: rgba($primary-color, .75);
+		text-decoration: none;
 	}
 	&:focus {
 		box-shadow: 0 0 0 2px $primary-color;
