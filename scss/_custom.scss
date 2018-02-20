@@ -67,3 +67,33 @@ body {
 		background-color: $light-gray;
 	}
 }
+
+.container {
+	@include breakpoint(medium) {
+		height: calc(100vh - 80px);
+		overflow: auto;
+	}
+}
+
+.padding-b-2 {
+	padding-bottom: 2rem;
+}
+
+.padding-b-4 {
+	padding-bottom: 4rem;
+}
+
+.divider {
+	display: block;
+	height: 2px;
+	background: $light-gray;
+	margin: 1rem auto;
+	width: 100%;
+	border: none;
+}
+
+.divider--secondary {
+	@extend .divider;
+	height: 1px;
+	opacity: .5;
+}
