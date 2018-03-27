@@ -7,22 +7,18 @@ html.no-js(lang='en')
 		title Acklen Design System
 		link(rel='stylesheet', href='css/app.css')
 	body
-		.row
-			include top-bar.pug
-		.row
-			.container.container--welcome.large-12.columns
-				hgroup.header
-					h1 AcklenDesign 
-					p Is a Library for Ackleners. Makes our workflow easier!
-		.row
-			.container.container--branding.large-12.columns
+		include includes/top-bar.pug
+		.grid-y
+			hgroup.header
+				h1 AcklenDesign 
+				p Is a Library for Ackleners. Makes our workflow easier!
+			.container--branding
 				hgroup.header
 					h2 Branding Guidelines
 					p Check more about Acklen Avenue Logo and stuff
 					a.button(href="resources.html") Download resources
 					a.button(href="barnding.html") Style guide
-		.row.expanded
-			footer.large-12.columns
+			footer
 				p.center All rights reserved 2018
 		script(src='../bower_components/jquery/dist/jquery.js')
 		script(src='../bower_components/what-input/dist/what-input.js')
