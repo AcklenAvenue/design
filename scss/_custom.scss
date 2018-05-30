@@ -76,7 +76,7 @@ body {
 		width: 100%;
 		background-color: $white;
 		border: 1px solid $light-gray;
-		padding: 20px;
+		padding: 60px 20px;
 		margin-bottom: 20px;
 	}
 	img.bg-secondary {
@@ -87,12 +87,45 @@ body {
 	}
 }
 
+.color {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 14px 20px;
+	.button{
+		margin-bottom: 0;	
+	}
+}
+
+.color:first-of-type {
+	margin-top: 40px;
+}
+
+
+.color--apple-green {
+	background-color: $primary-color;
+	color: $white;
+	.button--outlined:hover {
+		background-color: $secondary-color;
+	}
+}
+
+.color--slate-purple {
+	background-color: $secondary-color;
+	color: $white;
+}
+
+.color--pale-gray {
+	background-color: $light-gray;
+}
+
 
 .divider {
 	display: block;
 	height: 2px;
-	background: $light-gray;
-	margin: 1rem auto;
+	background: $medium-gray;
+	margin: 4rem auto 2rem;
 	width: 100%;
 	border: none;
 }
