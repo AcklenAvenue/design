@@ -69,9 +69,9 @@ $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #1962BA,
-  secondary: #DE5539,
-  success: #1B85DC,
+  primary: #72c02c,
+  secondary: #4f4959,
+  success: #3adb76,
   warning: #ffae00,
   alert: #d45E5E,
 );
@@ -82,7 +82,7 @@ $black: #4F4F4F;
 $white: #fefefe;
 $body-background: $white;
 $body-font-color: $black;
-$body-font-family: 'Oswald', Helvetica, Arial, sans-serif;
+$body-font-family: 'Montserrat', Helvetica, Roboto, Arial, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;

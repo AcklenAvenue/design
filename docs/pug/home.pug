@@ -1,0 +1,27 @@
+doctype html
+html.no-js(lang='en')
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='x-ua-compatible', content='ie=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		title Acklen Design System
+		link(rel='stylesheet', href='css/app.css')
+	body
+		include includes/top-bar.pug
+		.grid-y
+			hgroup.header
+				h1 AcklenDesign 
+				p Is a Library for Ackleners. Makes our workflow easier!
+			.container--branding
+				hgroup.header
+					h2 Branding Guidelines
+					p Check more about Acklen Avenue Logo and stuff
+					a.button(href="resources.html") Download resources
+					a.button(href="barnding.html") Style guide
+			footer
+				p.center All rights reserved 2018
+		script(src='../bower_components/jquery/dist/jquery.js')
+		script(src='../bower_components/what-input/dist/what-input.js')
+		script(src='../bower_components/foundation-sites/dist/js/foundation.js')
+		script(src='../js/app.js')
+

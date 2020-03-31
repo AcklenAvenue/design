@@ -1,0 +1,80 @@
+doctype html
+html.no-js(lang='en')
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='x-ua-compatible', content='ie=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		title Acklen Design System
+		link(rel='stylesheet', href='css/app.css')
+	body
+		header.top-bar.grid-x.grid-padding-x(role="navigation")
+			a.cell.shrink(href="index.html")
+				img.acklen-logo(src="img/AA-Logo-SlatePurple.svg")
+			nav.cell.auto: ul.tabs
+				li.tab__item.current
+					a(href="getting-started.html") Getting Started
+				li.tab__item
+					a(href="grid.html") Grid
+				li.tab__item
+					a(href="theme.html") Theme
+				li.tab__item
+					a(href="components.html") Components
+				li.tab__item
+					a(href="resources.html") Resources
+			a.cell.shrink.button(href="brand-assets.html") Brand Assets
+		.row
+			.sidebar.large-3.columns
+				ul.tabs--vertical
+					li.tab__item.tab__item--parent
+						a(href="") Getting Started
+					li.tab__item.tab__item--parent
+						a(href="") Fundamentals
+						ul.tabs--vertical.tabs--submenu
+							li.tab__item
+								a(href="") Grid
+					li.tab__item.tab__item--parent
+						a(href="") Theme
+						ul.tabs--vertical.tabs--submenu
+							li.tab__item
+								a(href="") Color Palette
+							li.tab__item
+								a(href="") Font Family
+							li.tab__item
+								a(href="") Icons
+					li.tab__item.selected.tab__item--parent
+						a(href="") Content
+						ul.tabs--vertical.tabs--submenu
+							li.tab__item.selected
+								a(href="") Code
+							li.tab__item
+								a(href="") Images
+							li.tab__item
+								a(href="") Tables
+							li.tab__item
+								a(href="") Texts
+					li.tab__item.selected.tab__item--parent
+						a(href="") Components
+						ul.tabs--vertical.tabs--submenu
+							h3 Actions
+							li.tab__item.selected
+								a(href="") Buttons
+							li.tab__item
+								a(href="") Dropdown
+							li.tab__item
+								a(href="") Toggle
+							h3 Feedback
+							li.tab__item.selected
+								a(href="") Callouts
+							li.tab__item
+								a(href="") Progress
+							li.tab__item
+								a(href="") Steps
+					li.tab__item.tab__item--parent
+						a(href="") Utilities
+			.container.columns.large-9
+				h1 Components
+				p Components goes here...
+		script(src='../bower_components/jquery/dist/jquery.js')
+		script(src='../bower_components/what-input/dist/what-input.js')
+		script(src='../bower_components/foundation-sites/dist/js/foundation.js')
+		script(src='../js/app.js')
