@@ -28,6 +28,7 @@ body {
 
 .top-bar {
 	align-content: center;
+	text-align: center;
 	.tab__item {
 		@include breakpoint(medium) {
 			margin: 0 .5rem;
@@ -56,12 +57,14 @@ body {
 
 .brand-assets__header{
 	margin: $global-margin auto;
+	
 	.acklen-logo {
 		max-height: inherit;
 		height: 80px;
 		margin-top: $global-margin;
 	}
 }
+
 
 .brand-assets__content {
 	@extend .brand-assets__header;

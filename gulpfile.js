@@ -5,7 +5,7 @@ var pug = require('gulp-pug');
 var sassPaths = [
   'bower_components/normalize.scss/sass',
   'bower_components/foundation-sites/scss',
-  'bower_components/motion-ui/src'
+  'node_modules/foundation-sites/scss',
 ];
 
 gulp.task('sass', function() {
@@ -14,7 +14,7 @@ gulp.task('sass', function() {
       includePaths: sassPaths,
       outputStyle: 'compressed' // if css compressed **file size**
     })
-      .on('error', $.sass.logError))
+    .on('error', $.sass.logError))
     .pipe($.autoprefixer({
       browsers: ['last 2 versions', 'ie >= 9']
     }))
@@ -26,7 +26,7 @@ gulp.task('default', ['sass','pug'], function() {
 });
 
 gulp.task('pug', function buildHTML() {
-  return gulp.src('docs/pug/*.pug')
+  return gulp.src('docs/pug/**/*.pug')
     .pipe(pug())
     .pipe(gulp.dest('docs/'));
 });
