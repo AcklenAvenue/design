@@ -5,7 +5,7 @@ html.no-js(lang='en')
 		meta(http-equiv='x-ua-compatible', content='ie=edge')
 		meta(name='viewport', content='width=device-width, initial-scale=1.0')
 		title Hero Unit - Branding Assets
-		link(rel="icon" href="img/favicon.ico" type="image/x-icon")
+		link(rel="icon" href="../herounit/img/favicon.ico" type="image/x-icon")
 		link(rel='stylesheet', href='../css/app.css')
 		link(rel='stylesheet', href='../css/main.css')
 		link(href="https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap" rel="stylesheet")
@@ -17,55 +17,58 @@ html.no-js(lang='en')
 				div(class= "header-logo")
 					img.herounit-logo(src="resources/HU- Brand-assets/HU-Logo/herounit-logofullcolor.svg")
 				div(class="grid-x section-navbar")
-					div(class="cell medium-auto d-btn")
+					div(class="cell medium-auto ")
 						a(href="#BrandAssets")
-							button(class="clear-button brandabtn" ) Brand Assets
-					div(class="cell medium-auto l-btn") 
+							button(class="clear-button btn-nav" ) Brand Assets
+					div(class="cell medium-auto") 
 						a(href="#Logos")
-							button(class="clear-button logosbtn") Logos 
-					div(class="cell medium-auto c-btn") 
+							button(class="clear-button btn-nav") Logos 
+					div(class="cell medium-auto") 
 						a(href="#ColorPalette")
-							button(class="clear-button cpbtn") Color Palette
+							button(class="clear-button btn-nav") Color Palette
+					div(class="cell medium-auto") 
+						a(href="#PresentationSlides")
+							button(class="clear-button btn-nav") Presentation Slides
 			hr(class="divider--secondary" aria-hidden="true")
-			div(class="section-brandassets" id="BrandAssets")
+			div(class="sections-herounit" id="BrandAssets")
 				h1 Brand Assets
 				p Looking for some Hero assets? You are in the right place, in here you can find the Herounit branding resources. Use them wisely whenever you need them, you will find each asset individually in this site or you can go ahead and download the entire assets folder by clicking here:
 				a(class="button button-download" href="	resources/HU- Brand-assets.zip") Download Here	
 			hr(class="divider--secondary" aria-hidden="true")
-			div(class="grid-x section-logos" id="Logos")
+			div(class="grid-x sections-herounit" id="Logos")
 				h1 Logos
 				p:strong Looking for the Hero logo? Our logo is the front-face of our brand, here you can find it in its different versions. As PNG (image file) or as SVG (Scalabale vector Graphic) these are available to be downloaded and used as best fits your requirements!
-					div(class="grid-x section-logos1")
-						div(class="cell-medium-auto logofullcolor ")
+					div(class="grid-x section-logos")
+						div(class="cell-medium-auto logo-cell")
 							figure.lfc
-								img.logo-fullcolor(src="resources/HU- Brand-assets/HU-Logo/herounit-logofullcolor.svg")
+								img.logo-img(src="resources/HU- Brand-assets/HU-Logo/herounit-logofullcolor.svg")
 							figcaption Full color Version in 	
 								a(href="resources/HU- Brand-assets/HU-Logo/herounit-logofullcolor.svg" download) SVG 
 								| or 
 								a(href="resources/HU- Brand-assets/HU-Logo/herounit-logofullcolor.png" download) PNG
-						div(class="cell-medium-auto logoblue")
+						div(class="cell-medium-auto logo-cell")
 							figure.lb
-								img.logo-blue(src="resources/HU- Brand-assets/HU-Logo/herounit-logofull-blue.svg")
+								img.logo-img(src="resources/HU- Brand-assets/HU-Logo/herounit-logofull-blue.svg")
 								figcaption Blue-Hero Version in	
 									a(href="resources/HU- Brand-assets/HU-Logo/herounit-logofull-blue.svg" download) SVG 
 									| or 
 									a(href="resources/HU- Brand-assets/HU-Logo/herounit-logofull-blue.png" download) PNG
-						div(class="cell-medium-auto logoorange")
+						div(class="cell-medium-auto logo-cell")
 							figure.lo
-								img.logo-orange(src="resources/HU- Brand-assets/HU-Logo/herounit-logofull-orange.svg")
+								img.logo-img(src="resources/HU- Brand-assets/HU-Logo/herounit-logofull-orange.svg")
 							figcaption Orange-Hero Version in 
 								a(href="resources/HU- Brand-assets/HU-Logo/herounit-logofull-orange.svg" download) SVG 
 								| or 
 								a(href="resources/HU- Brand-assets/HU-Logo/herounit-logofull-orange.png" download) PNG	
-					div(class="grid-x section-logos2")
-						div(class="cell-medium-auto blacklogo")
+					div(class="grid-x section-logos")
+						div(class="cell-medium-auto logo-cell")
 							figure.bl
-								img.logo-black(src="resources/HU- Brand-assets/HU-Logo/herounit-logofull-black.svg")
+								img.logo-img(src="resources/HU- Brand-assets/HU-Logo/herounit-logofull-black.svg")
 							figcaption Black Version in 
 								a(href="resources/HU- Brand-assets/HU-Logo/herounit-logofull-black.svg" download) SVG 
 								| or 
 								a(href="resources/HU- Brand-assets/HU-Logo/herounit-logofull-black.png" download) PNG
-						div(class="cell-medium-auto whitelogo")
+						div(class="cell-medium-auto logo-cell")
 							figure.wl
 								img.logo-white(src="resources/HU- Brand-assets/HU-Logo/herounit-logofull-white.svg")
 							figcaption White Version in	
@@ -73,7 +76,7 @@ html.no-js(lang='en')
 								| or 
 								a(href="resources/HU- Brand-assets/HU-Logo/herounit-logofull-white.png" download) PNG
 			hr(class="divider--secondary" aria-hidden="true")
-			div(class="grid-x section-colorassets" id="ColorPalette")
+			div(class="grid-x sections-herounit" id="ColorPalette")
 				h1 Color Palette
 				p:strong Herounit’s color palette stems from the root of it’s visual identity, it’s used to imprint the brand message in the different compositions that require it. These colors down beolow, can be used for printed or web products:
 					div(class="grid-x hu-section-colorprimary")
@@ -91,6 +94,18 @@ html.no-js(lang='en')
 							h5 Light-Orange Hero | #F1BC79
 							button(class="button hu-button-colorsecondarylight" data-clipboard-text="#F1BC79") Copy code
 				hr(class="divider--secondary" aria-hidden="true")
+				div(class="grid-x section-colorassets" id="PresentationSlides")
+					h1 Presentation Slides
+					p:strong Feel free to use our Google Slides theme for presentations. It can help you in meetings, showcases or even to present a great idea.
+
+					.grid-x
+						figure.branding-assets__item.cell.small-12
+							img(src="resources/HU- Brand-assets/hu-presentation-slide.png" alt="Herounit google slides")
+							figcaption 
+								p Use this presentation as a theme. 
+								p If you don't know how to import a theme on google slides 
+									a(href="https://support.google.com/docs/answer/1705254?co=GENIE.Platform%3DDesktop&hl=en" target="_blank") click here.
+							a(class="button button-download" href="	https://docs.google.com/presentation/d/1HrmOKPJhhHXGYdihjJWs3UvgpSF2FcbI5Z_9rm0zdkU/edit#slide=id.g8b8edcefac_0_0" target="_blank") Slides Template
 			
 				
 		
