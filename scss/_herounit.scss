@@ -33,17 +33,14 @@ justify-content: center;
 
 .btn-nav{
 font-size: 1.5rem;
+padding: .5rem;
 height: 48px; 
 width: 150px; 
 color: $hu-primary-color;
 &:hover{ color:$hu-secondary-color;}
 }  
 
-.d-btn, .l-btn, .c-btn, .s-btn{
-padding: .5rem;
-}
-
-.section-brandassets, .section-logos, .section-colorassets{
+.sections-herounit{
 margin: 40px;
 padding-top: 2rem;
 padding-right: 4rem;
@@ -71,12 +68,12 @@ a {
   margin: 2rem auto 2rem;
 }
 
-.section-logos1, .section-logos2 {
+.section-logos {
 padding: .5rem;
 justify-content: center;
 }
 
-.logofullcolor, .logoblue, .logoorange, .blacklogo, .whitelogo {
+.logo-cell, .logo-img {
 max-width: 350px;  
 padding: 1rem; 
 text-align: center;
@@ -86,10 +83,6 @@ text-align: center;
 padding: 1rem;
 background-color: #000;
 }
-.logo-black{
-padding: 1rem;
-}
-
 
 .hu-button-colorprimary,.hu-button-colorprimarylight {
 max-width: 200px;
