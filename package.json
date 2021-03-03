@@ -28,6 +28,6 @@
         "foundation-sites": "^6.6.2",
         "gulp-autoprefixer": "^3.1.0",
         "gulp-pug": "^3.3.0",
-        "pug": "^2.0.4"
+        "pug": "^3.0.1"
     }
 }
